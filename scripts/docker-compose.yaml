@@ -1,0 +1,15 @@
+services:
+  app:
+    image: toi_web_scraping_scraper
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./main.py:/app/main.py
+      - ./requirements.txt:/app/requirements.txt
+      - ./config.ini:/app/config.ini
+      - ./class_files:/app/class_files
+      - ./util_files:/app/util_files
+      - ./Folders:/app/Folders
+      - ./logger_config.py:/app/logger_config.py
+    command: ["python", "main.py"]

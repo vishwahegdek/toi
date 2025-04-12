@@ -1,0 +1,7 @@
+watchdog==4.0.0
+bs4==0.0.2
+requests==2.31.0
+kafka_python==2.0.2
+psycopg2_binary==2.9.9
+configparser==6.0.1
+python-magic==0.4.27
